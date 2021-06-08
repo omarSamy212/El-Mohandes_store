@@ -1,0 +1,86 @@
+<html>
+
+<head>
+		<link rel="stylesheet" href="regestration styles.css"/>
+		<link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+</head>
+
+<body>
+	<a  href="index.html"><img src="materials/logo/logo-final.png" style="position:relative;right:-460px;top:20px"alt="logo" width="300" height="80" title="El-Mohandes.com"></a>
+		
+		<a href="index.html"id="return-button" style="position:relative;top:-20;left:-250;font-family:'Josefin Sans" title="Go Back Home">HOME</a>
+		
+	<form>
+			<div>
+				<input id="email" type="email" required placeholder="Enter your email" autofocus />
+				<br>
+				<br>
+				<br>
+				<input type="submit" value="Send" style="color:black;"/>
+			</div>
+			<p style="font-size:20px;color:black;font-weight:bold";> &ensp;&ensp; We will send a reset mail to your email</p>
+			
+			
+			
+	</form>
+			
+			
+	
+	
+	
+	<script>
+		function GEEKFORGEEKS() {
+							var name = document.forms["RegForm"]["Name"];
+							var password = document.forms["RegForm"]["Password"];
+							var email = document.forms["RegForm"]["EMail"];
+							var phone = document.forms["RegForm"]["Telephone"];
+							var what = document.forms["RegForm"]["Subject"];
+							var password = document.forms["RegForm"]["Password"];
+							var address = document.forms["RegForm"]["Address"];
+					  
+							if (name.value == "") {
+								window.alert("PLEASE ENTER YOUR USERNAME.");
+								name.focus();
+								return false;
+							}
+					  
+							if (password.value == "") {
+								window.alert("PLEASE ENTER YOUR PASSWORD");
+								password.focus();
+								return false;
+							}
+					  
+							if (email.value == "") {
+								window.alert(
+								  "Please enter a valid e-mail address.");
+								email.focus();
+								return false;
+							}
+					  
+							if (phone.value == "") {
+								window.alert(
+								  "Please enter your telephone number.");
+								phone.focus();
+								return false;
+							}
+					  
+							if (password.value == "") {
+								window.alert("PLEASE ENTER YOUR PASSWORD");
+								password.focus();
+								return false;
+							}
+					  
+							if (what.selectedIndex < 1) {
+								alert("Please enter your course.");
+								what.focus();
+								return false;
+							}
+					  
+							return true;
+						}
+						
+		</script>
+</body>
+
+</html>

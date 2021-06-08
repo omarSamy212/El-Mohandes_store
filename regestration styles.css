@@ -1,0 +1,96 @@
+	body
+		{
+		background-color:#1c222a;
+		font-family:koho;
+		font-weight:bold;
+		}
+	form
+		{
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			transition: 0.3s;
+			width:30%;
+			border-radius: 20px;	
+			font-family:koho;
+			position:absolute;top:240;left:420;
+			padding:45px;
+			height:400px;
+			background-color:orange;
+			background-size:200%;
+			background-repeat:no-repeat;
+			font-weight:bold;
+			
+		}
+		
+	input
+		{
+			border:solid black;
+		  
+		   border-radius: 15px;
+		   padding: 12px;
+		   color:#3b92a3;
+		   background-color:#f1f1f1;
+		   text-align: center;
+		   width: 100%;
+		   font-size: 18px;
+		   font-family:koho;
+		   font-weight:bold;
+		}
+	
+	.form:hover 
+		{
+			box-shadow: 0 8px 16px 0 gray;
+		}
+	#login:hover
+		{
+			background-color:#f78536;
+		}
+	#forgot
+		{
+		   border:solid black;
+		   border-radius: 15px;
+		   padding: 12px;
+		   color:#3b92a3;
+		   background-color:#f1f1f1;
+		   text-align: center;
+		   width: 30%;
+		   font-size: 18px;
+		   font-family:koho;
+		   font-weight:bold;
+		   position:absolute;top:600px;left:467px;
+		}	
+	#forgot:hover
+		{
+			background-color:#f78536;
+		}
+
+	.form button 
+		{
+		   border:solid black;
+		   border-radius: 15px;
+		   padding: 12px;
+		   color:#3b92a3;
+		   background-color:#f1f1f1;
+		   text-align: center;
+		   width: 100%;
+		   font-size: 18px;
+		   font-family:koho;
+		   font-weight:bold;
+		}
+		
+	.form button:hover
+		{	
+			background-color:#f78536;	
+		}
+	#block1
+		{	
+			position:absolute;top:700px;right:1030px	;
+		}
+	
+	#return-button
+		{
+		font-size:25px;
+		text-decoration:none;
+		color:orange;
+		}
+		
+	

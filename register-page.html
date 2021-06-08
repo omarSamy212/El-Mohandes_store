@@ -1,0 +1,136 @@
+<html>
+
+	<head>
+		<link rel="stylesheet" href="regestration styles.css"/>	
+		<link href='https://fonts.googleapis.com/css?family=KoHo' rel='stylesheet'>
+	</head>	<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+	
+	<body>
+	<a  href="index.html"><img src="materials/logo/logo-final.png" style="position:relative;right:-460px;top:20px"alt="logo" width="300" height="80" title="El-Mohandes.com"></a>
+		
+		<a href="index.html"id="return-button" style="position:relative;top:-20;left:-250;font-family:'Josefin Sans" title="Go Back Home">HOME</a>
+		
+		
+		<form  id="form" name="RegForm" onsubmit="return GEEKFORGEEKS()" method="post">
+		
+			<div>
+				
+				<input id="user" type="text"  placeholder="USERNAME" autofocus minlength=7 maxlength=20 name="Name"/>
+			</div>
+			<br>
+			<div>
+				
+				<input id="pass" type="password"  placeholder="PASSWORD" autofocus minlength=7 maxlength=20 name="Password"/>			
+			</div>
+			<br>
+			<div>
+				
+				<input id="email" type="email"  placeholder="E-MAIL" autofocus name="EMail" />			
+			</div>
+			<br>
+			
+			<p style="display:inline;">
+          <p style="margin-top:6px;margin-left:110px;font-size:20px"><label>Male</label></p>            
+          <input style="margin-top:-37px;margin-left:-100px;"type="radio" name="radSize" id="sizeSmall" value="small" checked="checked">
+           <p style="margin-top:-45px;margin-left:246;font-size:20px"><label  style="float:left" for="sizeSmall">Female</label></p>
+          <input style="margin-top:-18px;margin-left:34px;" type="radio" name="radSize" id="sizeMed" value="medium">
+         
+      
+        </p>
+			
+			
+			<label  for="gender" style="font-size:20px;position:absolute;top:330px;left:70px;font-size:20px">Country:</label>
+			<select  id="gender" style="font-size:15px;position:absolute;top:335px;left:175px;font-size:15px;width:25%;font-family:koho;font-weight:bold;text-align:center;">
+				<option style="font-size:14px" value=1>Egypt</option>
+				<option style="font-size:14px" value=2>i̶s̶r̶a̶e̶l̶ palestine<i class="flag flag-palestine"></i></option>
+				<option style="font-size:14px" value=3>Emarates</option>
+				<option style="font-size:14px" value=4>Saudi Arabia</option>
+				<option style="font-size:14px" value=5>Oman</option>
+				<option style="font-size:14px" value=6>Tunisia</option>
+				<option style="font-size:14px" value=7>Bahren</option>
+				<option style="font-size:14px" value=8>Kuwait</option>
+				<option style="font-size:14px" value=9>Qatar</option>
+			</select>
+			
+			
+			
+			<div>
+			
+			</div>
+			<br>
+			<br>
+			<br>
+			<div>
+				<input style="position:absolute;top:376px;left:50px;font-size:30px" id="pri" type="checkbox"  name="checkbox" />
+				<label style="position:absolute;top:370px;left:70px;font-size:20px" for="pri" style="font-size:20px">Agree our privacy policy</label>
+			</div>
+			<br>
+
+			<div>
+				<input type="submit" value="Sign in" style="color:black;">
+				
+				
+			</div>
+			
+		</form>
+		
+		
+		
+		
+		
+		<script>
+		function GEEKFORGEEKS() {
+							var name = document.forms["RegForm"]["Name"];
+							var password = document.forms["RegForm"]["Password"];
+							var email = document.forms["RegForm"]["EMail"];
+							var phone = document.forms["RegForm"]["checkbox"];
+							var what = document.forms["RegForm"]["Subject"];
+							var password = document.forms["RegForm"]["Password"];
+							var address = document.forms["RegForm"]["Address"];
+					  
+							if (name.value == "") {
+								window.alert("PLEASE ENTER YOUR USERNAME.");
+								name.focus();
+								return false;
+							}
+					  
+							if (password.value == "") {
+								window.alert("PLEASE ENTER YOUR PASSWORD");
+								password.focus();
+								return false;
+							}
+					  
+							if (email.value == "") {
+								window.alert(
+								  "Please enter a valid e-mail address.");
+								email.focus();
+								return false;
+							}
+					  
+							if (!this.form.checkbox.checked) {
+								window.alert(
+								  "Please agree our privacy policy.");
+								phone.focus();
+								return false;
+							}
+					  
+							if (password.value == "") {
+								window.alert("PLEASE ENTER YOUR PASSWORD");
+								password.focus();
+								return false;
+							}
+					  
+							if (what.selectedIndex < 1) {
+								alert("Please enter your course.");
+								what.focus();
+								return false;
+							}
+					  
+							return true;
+						}
+						
+		</script>
+	</body>
+	
+	
+</html>
